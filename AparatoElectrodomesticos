@@ -1,0 +1,35 @@
+public class AparatoElectrodomestico {
+    private boolean interruptor;
+    private String cableElectrico;
+
+    public AparatoElectrodomestico(boolean interruptor, String cableElectrico) {
+        this.interruptor = interruptor;
+        this.cableElectrico = cableElectrico;
+    }
+
+    public void encender() {
+        interruptor = true;
+        System.out.println("El aparato esta encendido.");
+    }
+
+    public void apagar() {
+        interruptor = false;
+        System.out.println("El aparato esta apagado.");
+    }
+
+    public boolean isInterruptor() {
+        return interruptor;
+    }
+
+    public void setInterruptor(boolean interruptor) {
+        this.interruptor = interruptor;
+    }
+
+    public String getCableElectrico() {
+        return cableElectrico;
+    }
+
+    public void setCableElectrico(String cableElectrico) {
+        this.cableElectrico = cableElectrico;
+    }
+}
